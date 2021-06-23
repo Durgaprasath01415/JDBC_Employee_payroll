@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-23T09:41:10" hostname="DESKTOP-BS45UV7" time="0.706">
+  <properties/>
+  <testcase name="givenEmployeePayrollInDB_WhenRetrieved_ShouldMatchEmployeeCount" classname="EmployeePayrollServiceTest" time="0.706"/>
+  <system-out><![CDATA[Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=falseConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@2686646f]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
