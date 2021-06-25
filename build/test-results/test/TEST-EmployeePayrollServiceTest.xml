@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-25T06:57:30" hostname="DESKTOP-BS45UV7" time="0.922">
+<testsuite name="EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-25T08:08:48" hostname="DESKTOP-BS45UV7" time="0.725">
   <properties/>
-  <testcase name="givenDataRange_WhenRetrieved_ShouldMatchEmployeeCount" classname="EmployeePayrollServiceTest" time="0.922"/>
-  <system-out><![CDATA[Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=falseConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@7350ced8Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=falseConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@13f8c6ad]]></system-out>
+  <testcase name="givenPayrollData_WhenAverageSalaryRetrievedByGender_ShouldReturnProperValue" classname="EmployeePayrollServiceTest" time="0.725"/>
+  <system-out><![CDATA[Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=falseConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@11de9ffaConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=falseConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@6d439e49]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
