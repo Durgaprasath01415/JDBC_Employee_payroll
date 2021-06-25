@@ -25,4 +25,15 @@ public class EmployeePayrollData {
                 ", salary=" + salary +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o){
+        if(this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        EmployeePayrollData that = (EmployeePayrollData) o;
+        return id == that.id && Double.compare(that.salary,salary) == 0
+                &&name.equals(that.name);
+        }
 }
