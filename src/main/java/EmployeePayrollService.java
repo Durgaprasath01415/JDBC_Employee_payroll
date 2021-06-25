@@ -5,7 +5,6 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class EmployeePayrollService {
-
     public enum IOService {
         CONSOLE_IO, FILE_IO, DB_IO, REST_IO
     }
@@ -75,6 +74,10 @@ public class EmployeePayrollService {
         return this.employeePayrollList.stream()
                    .filter(employeePayrollDataItem -> employeePayrollDataItem.name.equals(name))
                    .findFirst().orElse(null);
+    }
+
+    public void addEmployeeToPayroll(String name, double salary, LocalDate startDate, char gender) {
+        employeePayrollList.add(employeePayrollDBService.addEmployeeToPayroll(name,salary,startDate,gender));
     }
 
     public void writeEmployeeData(IOService ioService) {

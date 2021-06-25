@@ -22,9 +22,9 @@ public class EmployeePayrollDBService {
         String userName = "root";
         String password = "270272";
         Connection connection;
-        System.out.printf("Connecting to database:" + jdbcURL);
+        System.out.println("Connecting to database:" + jdbcURL);
         connection = DriverManager.getConnection(jdbcURL, userName, password);
-        System.out.printf("Connection is successful!!!!" + connection);
+        System.out.println("Connection is successful!!!!" + connection);
         return connection;
     }
 
@@ -121,6 +121,26 @@ public class EmployeePayrollDBService {
             e.printStackTrace();
         }
         return 0;
+    }
+
+    public EmployeePayrollData addEmployeeToPayroll(String name, double salary, LocalDate startDate, char gender) {
+        int empolyeeId = -1;
+        EmployeePayrollData employeePayrollData = null;
+        String sql = String.format("INSERT INTO employee_payroll ( name,gender,salary,start ) " +
+                "VALUES ( '%s','%s', '%s', '%s' )",name,gender,salary,Date.valueOf(startDate));
+        try(Connection connection = this.getConnection()) {
+            Statement statement = connection.createStatement();
+            int rowAffected = statement.executeUpdate(sql, statement.RETURN_GENERATED_KEYS);
+            if (rowAffected == 1) {
+                ResultSet resultSet = statement.getGeneratedKeys();
+                if (resultSet.next())
+                    empolyeeId = resultSet.getInt(1);
+            }
+            employeePayrollData = new EmployeePayrollData(empolyeeId, name, salary, startDate);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return employeePayrollData;
     }
 }
 

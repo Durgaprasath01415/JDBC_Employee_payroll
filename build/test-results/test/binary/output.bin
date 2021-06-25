@@ -1,1 +1,6 @@
-¨Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=falseConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@11de9ffaConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=falseConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@6d439e49
+QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
+GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@18cf3de9
+QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
+GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@31b38bb2
+QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
+GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@20469109
