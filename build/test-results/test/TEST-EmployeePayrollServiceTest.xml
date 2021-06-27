@@ -1,35 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EmployeePayrollServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-27T06:21:50" hostname="DESKTOP-BS45UV7" time="1.839">
+<testsuite name="EmployeePayrollServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-27T08:07:59" hostname="DESKTOP-BS45UV7" time="1.706">
   <properties/>
-  <testcase name="given6Employee_WhenAddedToDB_ShouldMatchEmployeeEntries" classname="EmployeePayrollServiceTest" time="1.839"/>
+  <testcase name="given6Employee_WhenAddedToDB_ShouldMatchEmployeeEntries" classname="EmployeePayrollServiceTest" time="1.706">
+    <failure message="java.lang.AssertionError: expected:&lt;17&gt; but was:&lt;11&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;17&gt; but was:&lt;11&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at EmployeePayrollServiceTest.given6Employee_WhenAddedToDB_ShouldMatchEmployeeEntries(EmployeePayrollServiceTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
   <system-out><![CDATA[Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@67a6954c
+Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@22641090
 Employee Being Added : Jeff Bezos
 Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@59befc36
+Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@75a64a7b
 Employee Added: Jeff Bezos
 Employee Being Added : Bill Gates
 Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@464a599
+Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@7707b528
 Employee Added: Bill Gates
 Employee Being Added : Mark Zuckerberg
 Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@28b0aa76
+Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@2dbea56a
 Employee Added: Mark Zuckerberg
 Employee Being Added : Sunder
 Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@6fdf8e5
+Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@505fee69
 Employee Added: Sunder
 Employee Being Added : Mukesh
 Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@13194512
+Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@57d6742d
 Employee Added: Mukesh
 Employee Being Added : Anil
 Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@2a009c1a
+Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@668daaef
 Employee Added: Anil
-[EmployeePayrollData{id=1, name='Bill', salary=3000000.0}, EmployeePayrollData{id=2, name='Mark', salary=2000000.0}, EmployeePayrollData{id=3, name='Charlie', salary=3000000.0}, EmployeePayrollData{id=8, name='John', salary=5000000.0}, EmployeePayrollData{id=9, name='John', salary=5000000.0}, EmployeePayrollData{id=34, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=35, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=36, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=37, name='Sunder', salary=400000.0}, EmployeePayrollData{id=38, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=39, name='Anil', salary=600000.0}]
-Duration without Thread: PT1.1279287S
+[EmployeePayrollData{id=1, name='Bill', salary=3000000.0}, EmployeePayrollData{id=2, name='Mark', salary=2000000.0}, EmployeePayrollData{id=3, name='Charlie', salary=3000000.0}, EmployeePayrollData{id=8, name='John', salary=5000000.0}, EmployeePayrollData{id=9, name='John', salary=5000000.0}, EmployeePayrollData{id=73, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=74, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=75, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=76, name='Sunder', salary=400000.0}, EmployeePayrollData{id=77, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=78, name='Anil', salary=600000.0}]
+Duration without Thread: PT0.9439395S
+Duration with Thread: PT0.0029989S
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
