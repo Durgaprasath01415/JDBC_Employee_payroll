@@ -1,6 +1,28 @@
 QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@59d1158a
+GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@67a6954c
+#Employee Being Added : Jeff Bezos
 QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@5feb654d
+GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@59befc36
+Employee Added: Jeff Bezos
+#Employee Being Added : Bill Gates
 QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@6cd7f2c8
+FConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@464a599
+Employee Added: Bill Gates
+(Employee Being Added : Mark Zuckerberg
+QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
+GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@28b0aa76
+!Employee Added: Mark Zuckerberg
+Employee Being Added : Sunder
+QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
+FConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@6fdf8e5
+Employee Added: Sunder
+Employee Being Added : Mukesh
+QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
+GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@13194512
+Employee Added: Mukesh
+Employee Being Added : Anil
+QConnecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
+GConnection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@2a009c1a
+Employee Added: Anil
+ž[EmployeePayrollData{id=1, name='Bill', salary=3000000.0}, EmployeePayrollData{id=2, name='Mark', salary=2000000.0}, EmployeePayrollData{id=3, name='Charlie', salary=3000000.0}, EmployeePayrollData{id=8, name='John', salary=5000000.0}, EmployeePayrollData{id=9, name='John', salary=5000000.0}, EmployeePayrollData{id=34, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=35, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=36, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=37, name='Sunder', salary=400000.0}, EmployeePayrollData{id=38, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=39, name='Anil', salary=600000.0}]
+'Duration without Thread: PT1.1279287S
