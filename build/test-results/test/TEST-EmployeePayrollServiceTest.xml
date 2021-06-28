@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EmployeePayrollServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-27T08:07:59" hostname="DESKTOP-BS45UV7" time="1.706">
+<testsuite name="EmployeePayrollServiceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-27T12:04:30" hostname="DESKTOP-BS45UV7" time="2.426">
   <properties/>
-  <testcase name="given6Employee_WhenAddedToDB_ShouldMatchEmployeeEntries" classname="EmployeePayrollServiceTest" time="1.706">
+  <testcase name="given6Employee_WhenAddedToDB_ShouldMatchEmployeeEntries" classname="EmployeePayrollServiceTest" time="2.426">
     <failure message="java.lang.AssertionError: expected:&lt;17&gt; but was:&lt;11&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;17&gt; but was:&lt;11&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -57,35 +57,36 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <system-out><![CDATA[Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@22641090
+  <system-out><![CDATA[Processing Thread: Test workerConnecting to with Id:1
+Processing Thread: Test workerId: 1Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@6756793d
 Employee Being Added : Jeff Bezos
-Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@75a64a7b
+Processing Thread: Test workerConnecting to with Id:2
+Processing Thread: Test workerId: 2Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@70d84020
 Employee Added: Jeff Bezos
 Employee Being Added : Bill Gates
-Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@7707b528
+Processing Thread: Test workerConnecting to with Id:3
+Processing Thread: Test workerId: 3Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@791291a3
 Employee Added: Bill Gates
 Employee Being Added : Mark Zuckerberg
-Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@2dbea56a
+Processing Thread: Test workerConnecting to with Id:4
+Processing Thread: Test workerId: 4Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@5ed83edb
 Employee Added: Mark Zuckerberg
 Employee Being Added : Sunder
-Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@505fee69
+Processing Thread: Test workerConnecting to with Id:5
+Processing Thread: Test workerId: 5Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@1dc670e2
 Employee Added: Sunder
 Employee Being Added : Mukesh
-Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@57d6742d
+Processing Thread: Test workerConnecting to with Id:6
+Processing Thread: Test workerId: 6Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@2ff489cc
 Employee Added: Mukesh
 Employee Being Added : Anil
-Connecting to database:jdbc:mysql://localhost:3306/payroll_service?useSSL=false
-Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@668daaef
+Processing Thread: Test workerConnecting to with Id:7
+Processing Thread: Test workerId: 7Connection is successful!!!!com.mysql.cj.jdbc.ConnectionImpl@1856aba9
 Employee Added: Anil
-[EmployeePayrollData{id=1, name='Bill', salary=3000000.0}, EmployeePayrollData{id=2, name='Mark', salary=2000000.0}, EmployeePayrollData{id=3, name='Charlie', salary=3000000.0}, EmployeePayrollData{id=8, name='John', salary=5000000.0}, EmployeePayrollData{id=9, name='John', salary=5000000.0}, EmployeePayrollData{id=73, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=74, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=75, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=76, name='Sunder', salary=400000.0}, EmployeePayrollData{id=77, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=78, name='Anil', salary=600000.0}]
-Duration without Thread: PT0.9439395S
-Duration with Thread: PT0.0029989S
+[EmployeePayrollData{id=1, name='Bill', salary=3000000.0}, EmployeePayrollData{id=2, name='Mark', salary=2000000.0}, EmployeePayrollData{id=3, name='Charlie', salary=3000000.0}, EmployeePayrollData{id=8, name='John', salary=5000000.0}, EmployeePayrollData{id=9, name='John', salary=5000000.0}, EmployeePayrollData{id=156, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=157, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=158, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=159, name='Sunder', salary=400000.0}, EmployeePayrollData{id=160, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=161, name='Anil', salary=600000.0}]
+Duration without Thread: PT1.0489319S
+[EmployeePayrollData{id=1, name='Bill', salary=3000000.0}, EmployeePayrollData{id=2, name='Mark', salary=2000000.0}, EmployeePayrollData{id=3, name='Charlie', salary=3000000.0}, EmployeePayrollData{id=8, name='John', salary=5000000.0}, EmployeePayrollData{id=9, name='John', salary=5000000.0}, EmployeePayrollData{id=156, name='Jeff Bezos', salary=100000.0}, EmployeePayrollData{id=157, name='Bill Gates', salary=200000.0}, EmployeePayrollData{id=158, name='Mark Zuckerberg', salary=300000.0}, EmployeePayrollData{id=159, name='Sunder', salary=400000.0}, EmployeePayrollData{id=160, name='Mukesh', salary=500000.0}, EmployeePayrollData{id=161, name='Anil', salary=600000.0}]
+Duration with Thread: PT0.0059992S
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
